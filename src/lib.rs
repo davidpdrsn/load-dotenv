@@ -23,7 +23,9 @@
 //! }
 //! ```
 //!
-//! [`std::env!`]: https://doc.rust-lang.org/std/env/fn.vars.html
+//! [`std::env!`]: https://doc.rust-lang.org/std/macro.env.html
+
+#![doc(html_root_url = "https://docs.rs/load-dotenv/0.1.1")]
 
 extern crate proc_macro;
 

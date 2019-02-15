@@ -25,6 +25,6 @@ fn main() {
 }
 ```
 
-[`std::env!`]: https://doc.rust-lang.org/std/env/fn.vars.html
+[`std::env!`]: https://doc.rust-lang.org/std/macro.env.html
 
 License: MIT
