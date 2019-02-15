@@ -1,0 +1,22 @@
+[package]
+name = "load-dotenv"
+version = "0.1.0"
+authors = ["David Pedersen <david.pdrsn@gmail.com>"]
+edition = "2018"
+description = "This is a small procedural macro to load your .env file at compile time"
+documentation = "https://docs.rs/load-dotenv"
+homepage = "https://github.com/davidpdrsn/load-dotenv"
+keywords = ["environment", "env", "dotenv", "settings", "config"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/davidpdrsn/load-dotenv.git"
+
+[dependencies]
+dotenv = "0.13.0"
+quote = "0.6.10"
+syn = { version = "0.15.22", features = ["full"] }
+proc-macro2 = "0.4.24"
+
+[lib]
+proc-macro = true
+path = "src/lib.rs"
