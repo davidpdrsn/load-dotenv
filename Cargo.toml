@@ -12,11 +12,7 @@ readme = "README.md"
 repository = "https://github.com/davidpdrsn/load-dotenv.git"
 
 [dependencies]
-dotenv = "0.13.0"
-quote = "0.6.10"
-syn = { version = "0.15.22", features = ["full"] }
-proc-macro2 = "0.4.24"
+dotenv = "0.15.0"
 
 [lib]
 proc-macro = true
-path = "src/lib.rs"
