@@ -27,22 +27,20 @@
 
 #![doc(html_root_url = "https://docs.rs/load-dotenv/0.1.1")]
 
-extern crate proc_macro;
-
-use quote::quote;
+use proc_macro::TokenStream;
 
 /// Load the `.env` file and panic if the file is missing.
 #[proc_macro]
-pub fn load_dotenv(_: proc_macro::TokenStream) -> proc_macro::TokenStream {
+pub fn load_dotenv(_: TokenStream) -> TokenStream {
     dotenv::dotenv().expect("Failed to load .env file");
 
-    (quote! {}).into()
+    TokenStream::new()
 }
 
 /// Load the `.env` file but don't panic if the file is missing.
 #[proc_macro]
-pub fn try_load_dotenv(_: proc_macro::TokenStream) -> proc_macro::TokenStream {
+pub fn try_load_dotenv(_: TokenStream) -> TokenStream {
     dotenv::dotenv().ok();
 
-    (quote! {}).into()
+    TokenStream::new()
 }
