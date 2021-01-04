@@ -25,7 +25,7 @@
 //!
 //! [`std::env!`]: https://doc.rust-lang.org/std/macro.env.html
 
-#![doc(html_root_url = "https://docs.rs/load-dotenv/0.1.1")]
+#![doc(html_root_url = "https://docs.rs/load-dotenv/0.1.2")]
 
 use proc_macro::TokenStream;
 
