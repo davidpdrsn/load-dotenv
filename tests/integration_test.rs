@@ -1,4 +1,4 @@
-use load_dotenv::{try_load_dotenv, load_dotenv};
+use load_dotenv::load_dotenv;
 
 load_dotenv!();
 
